@@ -1,24 +1,23 @@
 package cn.yh.books.book.dao;
 
-import cn.yh.books.book.domain.Book;
-import cn.yh.books.cg.domain.CG;
-import cn.yh.books.page.domain.PageBean;
-import cn.yh.books.page.domain.PageConstants;
-import cn.yh.tools.commons.CommonUtils;
-import cn.yh.tools.jdbc.TxQueryRunner;
-import cn.yh.books.page.domain.Expression;
-
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.MapHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import javassist.compiler.ast.Expr;
+import cn.yh.books.book.domain.Book;
+import cn.yh.books.cg.domain.CG;
+import cn.yh.books.page.domain.Expression;
+import cn.yh.books.page.domain.PageBean;
+import cn.yh.books.page.domain.PageConstants;
+import cn.yh.tools.commons.CommonUtils;
+import cn.yh.tools.jdbc.TxQueryRunner;
+
+
 
 public class BookDao {
 	private TxQueryRunner tqr=new TxQueryRunner();
