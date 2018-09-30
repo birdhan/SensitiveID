@@ -1,0 +1,14 @@
+body{color:#404040;}
+a{font-size: 11pt;}
+.divBody{margin-left:240px; }
+.divTitle{line-height: 30px; font-weight: 900; width: 880px; height: 30px; border: 1px solid #d0d0d0; background: url(/books/images/bg_btns.png) repeat-x; background-position: 0 -132px;}
+.spanTitle{margin-left: 18px;}
+.divCenter{border-left: 1px solid #d0d0d0; border-right: 1px solid #d0d0d0; border-bottom: 1px solid #d0d0d0; width: 880px; height: 400px;}
+table{line-height: 50px;}
+.tdTitle{text-align: right; width: 300px;}
+.tdLabel{width: 300px;}
+.tdInput{width: 250px;}
+.input{ height: 32px; width: 240px; border: 1px solid #7f9db9; line-height: 32px; padding-left: 10px;}
+.error {color: #f40000;border: 1px solid #ffB8B8; line-height: 32px; padding:8px 8px 8px 35px; font-size: 10pt; background: url(/books/images/error.png) no-repeat; background-color: #fef2f2;}
+.spanImg{width: 240px; height: 60px; border: 1px solid #e2e2e2; display: inline-block; text-align: center;}
+#submit{border: 0px;height: 33px;width: 240px;}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <filter>
+  <filter-name>EncdoingFilter</filter-name>
+  <filter-class>cn.yh.tools.filter.EncodingFilter</filter-class>
+ </filter>
+ <filter-mapping>
+  <filter-name>EncdoingFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+ </filter-mapping>
+ <servlet>
+  <servlet-name>UserServlet</servlet-name>
+  <servlet-class>cn.yh.books.user.web.servlet.UserServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>VerifyCodeServlet</servlet-name>
+  <servlet-class>cn.yh.tools.vcode.servlet.VerifyCodeServlet</servlet-class>
+ </servlet>
+  <servlet>
+    <servlet-name>CGServlet</servlet-name>
+    <servlet-class>cn.yh.books.cg.web.servlet.CGServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BookServlet</servlet-name>
+    <servlet-class>cn.yh.books.book.web.servlet.BookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CartItemServlet</servlet-name>
+    <servlet-class>cn.yh.books.ci.web.servlet.CartItemServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>cn.yh.books.order.web.servlet.OrderServlet</servlet-class>
+  </servlet>
+
+
+
+
+ <servlet-mapping>
+  <servlet-name>UserServlet</servlet-name>
+  <url-pattern>/UserServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>VerifyCodeServlet</servlet-name>
+  <url-pattern>/VerifyCodeServlet</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CGServlet</servlet-name>
+    <url-pattern>/CGServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookServlet</servlet-name>
+    <url-pattern>/BookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartItemServlet</servlet-name>
+    <url-pattern>/CartItemServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/OrderServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
